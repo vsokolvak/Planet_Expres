@@ -1,0 +1,81 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+//
+$txt_color: white;
+//
+//
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');//
+header{
+    position: relative;
+    padding: 40px;
+    background: deepskyblue url('../images/head_bg.jpg') no-repeat 0 0;
+    background-size: cover;
+    nav{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: $txt_color;
+    font-family: Open Sans;
+    font-size: 27px;
+    line-height: 22px;
+    span{
+        margin: 0;
+        padding: 0;
+    }
+    .planet{
+        font-weight: 800;
+        padding-left: 30px;
+    }
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    li{
+        text-transform: uppercase;
+        position: relative;
+        color: $txt_color;
+        font-family: OpenSans;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+        padding-right: 33px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        &:hover{
+        color: black;
+        cursor: pointer;
+        }
+        &>:last-child{
+            padding-right: 0;
+        }
+    }
+    .menu_drop{
+        position: absolute;
+        top: 100%;
+        left: -70%;
+        background-color: black;
+        padding: 10px 2px !important;
+        li{
+            padding-left: 23px;
+            width: 150px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &:hover{
+                background-color: white;
+            }
+
+        }
+    }
+}
+

@@ -1,0 +1,151 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/screen.scss */
+header {
+  position: relative;
+  padding: 40px;
+  background: deepskyblue url("../images/head_bg.jpg") no-repeat 0 0;
+  background-size: cover;
+}
+/* line 17, ../sass/screen.scss */
+header nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 24, ../sass/screen.scss */
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Open Sans;
+  font-size: 27px;
+  line-height: 22px;
+}
+/* line 31, ../sass/screen.scss */
+.logo span {
+  margin: 0;
+  padding: 0;
+}
+/* line 35, ../sass/screen.scss */
+.logo .planet {
+  font-weight: 800;
+  padding-left: 30px;
+}
+
+/* line 41, ../sass/screen.scss */
+.menu {
+  position: relative;
+  display: flex;
+}
+/* line 44, ../sass/screen.scss */
+.menu li {
+  text-transform: uppercase;
+  position: relative;
+  color: white;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  padding-right: 33px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/* line 55, ../sass/screen.scss */
+.menu li:hover {
+  color: black;
+  cursor: pointer;
+}
+/* line 59, ../sass/screen.scss */
+.menu li > :last-child {
+  padding-right: 0;
+}
+/* line 63, ../sass/screen.scss */
+.menu .menu_drop {
+  position: absolute;
+  top: 100%;
+  left: -70%;
+  background-color: black;
+  padding: 10px 2px !important;
+}
+/* line 69, ../sass/screen.scss */
+.menu .menu_drop li {
+  padding-left: 23px;
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 74, ../sass/screen.scss */
+.menu .menu_drop li:hover {
+  background-color: white;
+}
